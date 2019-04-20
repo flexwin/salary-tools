@@ -1,0 +1,14 @@
+workspace.xml
+.DS_Store
+.tmp
+.settings
+*~
+# IDEA IDE
+.idea*
+*.iml
+build/
+.idea/
+dist/
+out/
+local-*
+coverage.txt

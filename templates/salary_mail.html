@@ -1,0 +1,142 @@
+<table border="0" width="100%" cellpadding="0" cellspacing="0" bgcolor="#E6E5E7">
+    <tr>
+        <td height="50"></td>
+    </tr>
+
+    <tr>
+        <td height="30" style="font-size: 30px; line-height: 30px;">&nbsp;</td>
+    </tr>
+    <!-- ======= Main section ======= -->
+    <!-- ======= CTA ======= -->
+    <tr>
+        <td align="center">
+            <table border="0" align="center" width="590" cellpadding="0" cellspacing="0" bgcolor="#FFFFFF"
+                   style="border-collapse:collapse; mso-table-lspace:0pt; mso-table-rspace:0pt;" class="container590">
+                <tr>
+                    <td height="45" style="font-size: 45px; line-height: 45px;">&nbsp;</td>
+                </tr>
+                <tr>
+                    <td height="25" style="font-size: 25px; line-height: 25px;">&nbsp;</td>
+                </tr>
+                <tr>
+                    <td>
+                        <table border="0" align="center" width="490" cellpadding="0" cellspacing="0" bgcolor="#FFFFFF"
+                               class="container580">
+                            <tr>
+                                <td align="center"
+                                    style="color: #576b95; font-size: 13px; font-weight: lighter; font-family: 'Source Sans Pro', Arial, sans-serif; mso-line-height-rule: exactly; line-height: 24px;">
+                                    <div style="line-height: 24px;">
+                                        {{.CompanyName}}衷心地感谢您的励精图治和全情付出！</br>请核对工资信息，如有疑问请咨询薪酬组({{.SalaryPhone}})
+                                    </div>
+                                </td>
+                            </tr>
+                        </table>
+                    </td>
+                </tr>
+                <tr>
+                    <td height="25" style="font-size: 25px; line-height: 25px;">&nbsp;</td>
+                </tr>
+                <tr>
+                    <td>
+                        <table border="0" align="center" width="490" cellpadding="0" cellspacing="0" bgcolor="#FFFFFF"
+                               class="container580">
+                            {{range $index, $element := .SalaryTables}}
+                                <tr>
+                                    <td align="right"
+                                        style="color: #353535; font-size: 15px; font-weight: lighter; font-family: 'Source Sans Pro', Arial, sans-serif; mso-line-height-rule: exactly; line-height: 24px;">
+                                        {{ $element.Header }}
+                                    </td>
+                                    <td align="center"
+                                        style="color: #e64340; font-size: 15px; font-weight: normal; font-family: 'Source Sans Pro', Arial, sans-serif; mso-line-height-rule: exactly; line-height: 24px;">
+                                        {{ $element.Content }}
+                                    </td>
+                                </tr>
+                            {{ else }}
+                                empty
+                            {{ end }}
+                        </table>
+                    </td>
+                </tr>
+                {{/*<tr>
+                    <td height="40" style="font-size: 40px; line-height: 40px;">&nbsp;</td>
+                </tr>
+                <tr>
+                    <td align="center"><a href="" style="display: block; width: 140px; height: 40px; border-style: none !important; border: 0 !important;"><img
+                                    width="140" height="40" border="0"
+                                    style="display: block; width: 140px; height: 40px;"
+                                    src="http://www.img.com/logo.png"
+                                    alt="公司官网"/></a></td>
+                </tr>
+                <tr>
+                    <td height="45" style="font-size: 45px; line-height: 45px;">&nbsp;</td>
+                </tr>*/}}
+            </table>
+        </td>
+    </tr><!-- ======= end CTA ======= -->
+    <tr>
+        <td height="10" style="font-size: 10px; line-height: 10px;">&nbsp;</td>
+    </tr>
+    <!-- ======= footer ======= -->
+    <tr>
+        <td align="center">
+            <table border="0" align="center" width="590" cellpadding="0" cellspacing="0" bgcolor="#FFFFFF"
+                   class="container590">
+                <tr>
+                    <td align="center">
+                        <table border="0" align="center" width="560" cellpadding="0" cellspacing="0"
+                               class="container580">
+                            <tr>
+                                <td height="20" style="font-size: 20px; line-height: 20px;">&nbsp;</td>
+                            </tr>
+                            <tr>
+                                <td></td>
+                                <td align="center">
+                                    <table border="0" align="left" cellpadding="0" cellspacing="0"
+                                           style="border-collapse:collapse; mso-table-lspace:0pt; mso-table-rspace:0pt;"
+                                           class="container580">
+                                        <tr>
+                                            <td align="center"
+                                                style="color: #adb3ba; font-size: 13px; font-family: 'Source Sans pro', Arial, sans-serif; line-height: 30px;">
+                                                <span style="color: #222222;">{{.CompanyName}}}</span> © Copyright 2019
+                                                . All Rights
+                                                Reserved
+                                            </td>
+                                        </tr>
+                                    </table>
+                                    <table border="0" width="10" align="left" cellpadding="0" cellspacing="0"
+                                           style="border-collapse:collapse; mso-table-lspace:0pt; mso-table-rspace:0pt;">
+                                        <tr>
+                                            <td height="20" width="10" style="font-size: 20px; line-height: 20px;">
+                                                &nbsp;
+                                            </td>
+                                        </tr>
+                                    </table>
+                                    <table border="0" align="right" cellpadding="0" cellspacing="0"
+                                           style="border-collapse:collapse; mso-table-lspace:0pt; mso-table-rspace:0pt;"
+                                           class="container580">
+                                        <tr>
+                                            <td align="center"
+                                                style="color: #adb3ba; font-size: 13px; font-family: 'Source Sans pro', Arial, sans-serif; line-height: 30px;">
+                                                <a href="" style="color: #adb3ba; text-decoration: none;">薪酬政策</a>&nbsp;&nbsp;<span
+                                                        style="font-weight: 700; color: #2c3e50;">/</span>&nbsp;&nbsp;
+                                                <a href="" style="color: #adb3ba; text-decoration: none;">员工手册</a>&nbsp;&nbsp;<span
+                                                        style="font-weight: 700; color: #2c3e50;">/</span>&nbsp;&nbsp;
+                                                <a href="" style="color: #adb3ba; text-decoration: none;">争议处理</a></td>
+                                        </tr>
+                                    </table>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td height="20" style="font-size: 20px; line-height: 20px;">&nbsp;</td>
+                            </tr>
+                        </table>
+                    </td>
+                </tr>
+            </table>
+        </td>
+    </tr>
+    <tr>
+        <td height="30" style="font-size: 30px; line-height: 30px;">&nbsp;</td>
+    </tr>
+    <!-- ======= end footer ======= -->
+</table>

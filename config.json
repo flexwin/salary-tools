@@ -1,0 +1,17 @@
+{
+  "mail": {
+    "name": "宇宙公司薪酬组",
+    "email": "zeus@cosmic.com",
+    "password": "***",
+    "host": "smtp.exmail.qq.com",
+    "port": 465,
+    "ssl": true
+  },
+  "company": {
+    "name": "宇宙公司",
+    "salary-phone": "0731-88888888"
+  },
+  "staff": {
+    "header": false
+  }
+}
